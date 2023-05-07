@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { TabContent, TabPane } from "sveltestrap";
   import SQLite from "tauri-plugin-sqlite-api";
   import { onMount } from "svelte";
