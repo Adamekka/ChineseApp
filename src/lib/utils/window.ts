@@ -1,6 +1,6 @@
 import { appWindow } from '@tauri-apps/api/window';
 
-export let fullscreen: boolean = false;
+let fullscreen: boolean = false;
 
 export function toggleFullscreen() {
     console.log("toggleFullscreen");
@@ -23,4 +23,5 @@ async function fullscreenWindow() {
 async function minimizeWindow() {
     console.log("minimizeWindow");
     const result = await appWindow.setFullscreen(false);
+    console.log(result);
 }
